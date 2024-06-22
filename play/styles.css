@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    overflow: hidden;
+ }
+ 
+ #gameCanvas {
+    position: absolute;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: #4d0944;
+ }
+ 
+ #uiPanel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #3c0934;
+    color: #d164cf;
+    padding: 20px;
+    box-sizing: border-box;
+ }
+ 
+ #title {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ #buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+ }
+ 
+ .control-button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #1e021d;
+    border: none;
+    border-radius: 5px;
+    color: #d164cf;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+ }
+ 
+ .control-button:hover {
+    background-color: #d164cf;
+    color: #1e021d;
+ }
+ 
+ .control-button:active {
+    background-color: #d164cf;
+    color: #1e021d;
+ }
+ 
