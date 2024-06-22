@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Last Stand - Play</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Defend yourself against a relentless zombie apocalypse in Last Stand. Set up your base and survive as long as you can!" />
+      <meta name="keywords" content="Last Stand, game, zombie apocalypse, survival, HTML5 game, JavaScript game" />
+      <meta name="author" content="Mukul Anand" />
+      <meta property="og:title" content="Last Stand - Play" />
+      <meta property="og:description" content="Defend yourself against a relentless zombie apocalypse in Last Stand. Set up your base and survive as long as you can!" />
+      <meta property="og:image" content="/assets/favicon.ico" />
+      <meta property="og:url" content="https://last-stand.vercel.app" />
+      <meta name="theme-color" content="#4d0944" />
+      <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+      <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+      <link rel="stylesheet" href="styles.css" />
+   </head>
+
+   <body>
+      <div id="uiPanel">
+         <div id="title">
+            <h1>Zombie Defense Game</h1>
+         </div>
+         <div id="details">
+            <p>Score: <span id="playerScore">0</span></p>
+            <p>Health: <span id="playerHealth">100</span></p>
+         </div>
+         <div id="buttons">
+            <button id="pauseButton" class="control-button">Pause</button>
+            <button id="restartButton" class="control-button">Restart</button>
+            <button id="exitButton" class="control-button">Exit</button>
+         </div>
+      </div>
+      <canvas id="gameCanvas"></canvas>
+
+      <!-- JavaScript file -->
+      <script src="game.js"></script>
+   </body>
+</html>
