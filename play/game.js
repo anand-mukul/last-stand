@@ -283,8 +283,8 @@ function updateLeaderboard(newScore) {
 
   const leaderboardList = document.getElementById("leaderboard-list");
   leaderboardList.innerHTML = leaderboard
-    .map((score) => `<li>${score}</li>`)
-    .join("");
+      .map((score, index) => `<li>${index + 1}. ${score}</li>`)
+      .join("");
 }
 
 function restartGame() {
