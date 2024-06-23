@@ -368,5 +368,6 @@ function gameLoop(timestamp) {
 
 background.onload = () => {
   drawBackground();
+  updateLeaderboard();
   gameLoop(0);
 };
